@@ -1,6 +1,10 @@
 # DS_Store
 .DS_Store
 
+# ignore config file
+config.py
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
