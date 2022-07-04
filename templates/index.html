@@ -7,8 +7,10 @@
     <title>Title</title>
 </head>
 <body>
-    <p>
-        Index Page
-    </p>
-</body>
+
+    {% for table in tables %}
+                {{titles[loop.index]}}
+                {{ table|safe }}
+    {% endfor %}
+    </body>
 </html>
