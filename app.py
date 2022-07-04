@@ -23,4 +23,4 @@ def index():
     # return results as a dataframe
     results = pd.read_sql(query, con)
 
-    return render_template("index.html", tables=[df.to_html(classes='data')], titles=df.columns.values)
+    return render_template("index.html", tables=[results.to_html(classes='data')], titles=df.columns.values)
