@@ -3,6 +3,7 @@
 
 # ignore config file
 config.py
+.env
 
 
 # Byte-compiled / optimized / DLL files
