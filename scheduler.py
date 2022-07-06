@@ -10,6 +10,9 @@ from sqlalchemy import create_engine
 
 # Find environment variables
 DATABASE_URL = os.environ.get("DATABASE_URL", None)
+# sqlalchemy deprecated urls which begin with "postgres://"; now it needs to start with "postgresql://"
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
 
 
 # Get all players' name, team name, position
